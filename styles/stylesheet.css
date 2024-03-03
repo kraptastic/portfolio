@@ -1,23 +1,74 @@
+* {
+    box-sizing: border-box
+}
+.page-break {
+    background-color: #131313;
+    color: white;
+    height: 3vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 html, body {
     padding: 0;
     margin: 0;
     font-family: helvetica;
-    }
-
+    font-size: 0.9rem;
+}
+header{
+    display: flex;
+}
 nav {
-    max-width: 79%;
-    overflow: auto;
-    display: inline-flex;
-    }
-
-article {
-    max-width: 80%;
-    margin: auto;
-    }
-
+    width: 100%;
+    display: flex;
+}
+h2 {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20%;
+    max-width: 35%;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav li:hover {
+    background-color: #131313;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .3rem 0;
+}
+nav a:hover{
+    color: purple;
+    text-decoration: none;
+}
+nav a:visited{ 
+    color: green;
+}
+a:empty{
+    padding: 0;
+    margin: 0;
+    border: 0 solid white;
+}
 .parallax {
     background-image: url('../images/kyle-profile.jpg');
-    min-height:500px;
+    min-height:70vh;
     min-width: 100%;
     max-width: 100%;
     background-attachment: fixed;
@@ -25,51 +76,58 @@ article {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.article-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0 0 0;
+}
 
-.page-break {
-    background-color: #131313;
-    color: white;
-    height: 15px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
+#bio, #overview {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }    
+h3 {
+    display: flex;
+    justify-content: center;
+}
+h4 {
+        margin: -0.1rem 0 0 0;
+}
+h5 {
+    display: flex;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+figcaption {
+    margin-top: 0.1rem;
+}
+p  {
+    max-width: 40%;
+    margin: -0.1rem 0 0 0;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#page-one-footer {
+    margin: 10vh 0 3vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-nav ul {
-    list-style-type: none;
-    margin: auto;
-    }
-
-nav li {
-    border-radius: 5px;
-    float: left;
-    width: 15vw;
-    text-align: center;
-    margin: 0.5rem;
-    }
-nav li:hover {
-    background-color: #131313;
-    }
-
-nav a{
-    display: block;
-    padding: 8px;
-    margin: auto;
-    }
-
-nav a:hover{
-    color: purple;
-    text-decoration: none;
-    }
-
-nav a:visited{ 
-    color: green;
-    }
-
-h2 {
-    margin: auto;
-    font-size: 1.5rem;
-    padding: 0 0 0 20px;
-    max-width: 20%;
-    display: inline-flex;
-    }
+}
